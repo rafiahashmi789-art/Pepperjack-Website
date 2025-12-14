@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Shopping Cart - PepperJack</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+  <div class="announcement">Save up to 60% with code: Pepperjack <button class="announcement_button">Shop Now</button></div>
+  <header class="site-header">
+    <nav class="nav-left">
+      <a href="shop-all.html">Shop All</a>
+      <a href="shop-all.html">Candles</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="nav-center">
+      <a href="index.html"><img src="assets/Group (2).png" alt="Logo" class="logo"></a>
+    </div>
+
+    <div class="nav-right">
+      <a href="#" class="icon wishlist"><img src="assets/group%205%20(2).png" alt="Wishlist"></a>
+      <a href="#" class="icon search"><img src="assets/group%204%20(2).png" alt="Search"></a>
+      <a href="cart.html" class="icon cart">
+        <img src="assets/group%203%20(2).png" alt="Cart">
+        <span class="cart-count" id="cartCount">0</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="cart-main">
+    <div class="cart-container">
+      <h1 class="cart-title">Shopping Cart</h1>
+
+      <div class="cart-content">
+        <div class="cart-items-section">
+          <div id="cartItems" class="cart-items">
+            <!-- Cart items will be inserted here by JavaScript -->
+          </div>
+          
+          <div id="emptyCart" class="empty-cart">
+            <p>Your cart is empty</p>
+            <a href="shop-all.html" class="btn-continue-shopping">Continue Shopping</a>
+          </div>
+        </div>
+
+        <div class="cart-summary">
+          <h2 class="summary-title">Order Summary</h2>
+          
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <span id="subtotal">$0.00</span>
+          </div>
+          
+          <div class="summary-row">
+            <span>Shipping</span>
+            <span id="shipping">$10.00</span>
+          </div>
+          
+          <div class="summary-row">
+            <span>Tax</span>
+            <span id="tax">$0.00</span>
+          </div>
+          
+          <div class="summary-divider"></div>
+          
+          <div class="summary-row total">
+            <span>Total</span>
+            <span id="total">$0.00</span>
+          </div>
+
+          <button class="btn-checkout" id="checkoutBtn">Proceed to Checkout</button>
+          <a href="shop-all.html" class="btn-continue">Continue Shopping</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="assets/Group.png" alt="Pepperjack" class="footer-logo">
+        <p class="footer-brand-text">Lorem ipsum dolor sit amet consectetur. Ac arcu nisi posuere et in amet nulla a. In non porta viverra sit eros nibh</p>
+      </div>
+      <div class="footer-newsletter">
+        <h3 class="newsletter-title">Sign Up For 10% Off</h3>
+        <p class="newsletter-subtitle">A lil' sunshine in your inbox. Stay up to date on product drops, news, and events.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email" class="newsletter-input">
+          <button type="submit" class="newsletter-submit">→</button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="footer-middle">
+      <div class="footer-column">
+        <h4 class="footer-heading">Shop Shop</h4>
+        <ul class="footer-links">
+          <li><a href="shop-all.html">Shop All</a></li>
+          <li><a href="#">Artists</a></li>
+          <li><a href="#">Gift Sets</a></li>
+          <li><a href="#">Best Sellers</a></li>
+          <li><a href="#">Sale</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h4 class="footer-heading">About Us</h4>
+        <ul class="footer-links">
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Warranty Policy</a></li>
+          <li><a href="#">Service Terms & Conditions</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h4 class="footer-heading">Company</h4>
+        <ul class="footer-links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Mission</a></li>
+          <li><a href="#">Customer Testimonials</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h4 class="footer-heading">Connect</h4>
+        <ul class="footer-links">
+          <li><a href="#">Newsletter Sign-Up</a></li>
+          <li><a href="#">Social Media Links</a></li>
+          <li><a href="#">Refer a Friend</a></li>
+          <li><a href="#">Leave a Review</a></li>
+          <li><a href="#">Join Our Community</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p class="footer-copyright">2021 Shelly. <a href="#">Terms of use</a> and <a href="#">privacy policy</a>.</p>
+      <div class="footer-payment">
+        <img src="assets/Payment.png" alt="Payment Methods">
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/cart.js"></script>
+</body>
+</html>

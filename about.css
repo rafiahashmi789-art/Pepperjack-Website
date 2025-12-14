@@ -1,0 +1,381 @@
+.about-header {
+  position: absolute;
+  top: var(--announcement-height);
+  background: transparent;
+  z-index: 100;
+}
+
+.about-banner {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-image: url("../assets/h4-shop-img2new.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: var(--announcement-height);
+}
+
+.about-banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(50, 64, 56, 0.4);
+  z-index: 1;
+}
+
+.about-banner-content {
+  position: relative;
+  z-index: 2;
+  text-align: left;
+  color: white;
+  max-width: 800px;
+  padding: 0 var(--container-padding);
+  margin-left: 0;
+}
+
+.about-banner-title {
+  font-family: "Noto Serif", serif;
+  font-size: 64px;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+  line-height: 1.1;
+  color: white;
+}
+
+.about-banner-subtitle {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+  opacity: 0.95;
+}
+.about-content-section {
+  background: #fcf9f3;
+  padding: 100px 0;
+}
+
+.about-content-wrapper {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+  display: grid;
+  grid-template-columns: 45% 55%;
+  gap: 80px;
+  align-items: center;
+}
+
+.about-text-content {
+  padding-right: 40px;
+}
+
+.about-label {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+}
+
+.about-heading {
+  font-family: "Noto Serif", serif;
+  font-size: 48px;
+  font-weight: 600;
+  color: #324038;
+  margin: 0 0 32px 0;
+  line-height: 1.2;
+}
+
+.about-paragraph {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666;
+  margin: 0 0 24px 0;
+}
+
+.about-paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.about-image-content {
+  width: 100%;
+  height: auto;
+}
+
+.about-image-content img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+.values-section {
+  background: #f0ebe1;
+  padding: 100px 0;
+}
+
+.values-wrapper {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+.values-label {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #324038;
+  margin: 0 0 16px 0;
+}
+
+.values-heading {
+  font-family: "Noto Serif", serif;
+  font-size: 48px;
+  font-weight: 600;
+  color: #324038;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+}
+
+.values-description {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+  margin: 0 0 60px 0;
+  max-width: 600px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1100px;
+}
+
+.value-item {
+  background: transparent;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  max-width: 100%;
+}
+
+.value-image {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.value-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.mission-section {
+  background: #fcf9f3;
+  padding: 100px 0;
+}
+
+.mission-wrapper {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+  display: grid;
+  grid-template-columns: 45% 55%;
+  gap: 80px;
+  align-items: center;
+}
+
+.mission-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.mission-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.mission-text {
+  padding-left: 20px;
+}
+
+.mission-label {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+}
+
+.mission-heading {
+  font-family: "Noto Serif", serif;
+  font-size: 48px;
+  font-weight: 600;
+  color: #324038;
+  margin: 0 0 32px 0;
+  line-height: 1.2;
+}
+
+.mission-paragraph {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666;
+  margin: 0 0 24px 0;
+}
+
+.mission-paragraph:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 1024px) {
+  .about-content-wrapper {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .about-text-content {
+    padding-right: 0;
+  }
+
+  .about-heading {
+    font-size: 40px;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 900px;
+  }
+
+  .values-heading {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-banner {
+    height: 350px;
+    margin-top: calc(var(--announcement-height) + 60px);
+  }
+
+  .about-banner-title {
+    font-size: 40px;
+  }
+
+  .about-banner-subtitle {
+    font-size: 16px;
+  }
+
+  .about-content-section {
+    padding: 60px 0;
+  }
+
+  .about-heading {
+    font-size: 32px;
+  }
+
+  .about-paragraph {
+    font-size: 15px;
+  }
+
+  .values-section {
+    padding: 60px 0;
+  }
+
+  .values-heading {
+    font-size: 32px;
+  }
+
+  .values-description {
+    margin-bottom: 40px;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .value-image {
+    height: 240px;
+  }
+
+  .value-footer {
+    padding: 20px 24px;
+  }
+
+  .value-title {
+    font-size: 20px;
+  }
+
+  .mission-section {
+    padding: 60px 0;
+  }
+
+  .mission-heading {
+    font-size: 32px;
+  }
+
+  .mission-paragraph {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-banner {
+    height: 280px;
+  }
+
+  .about-banner-title {
+    font-size: 28px;
+  }
+
+  .about-banner-subtitle {
+    font-size: 14px;
+  }
+
+  .about-content-wrapper {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .about-image {
+    order: -1;
+  }
+
+  .about-heading {
+    font-size: 26px;
+  }
+
+  .values-heading {
+    font-size: 26px;
+  }
+
+  .values-grid {
+    max-width: 100%;
+  }
+
+  .mission-wrapper {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .mission-heading {
+    font-size: 26px;
+  }
+}

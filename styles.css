@@ -1,0 +1,1126 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600&family=Plus+Jakarta+Sans:wght@400;600&display=swap");
+
+:root {
+  --announcement-height: 48px;
+  --container-max-width: 1440px;
+  --container-padding: 48px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.announcement {
+  background: #324038;
+  color: #ffffff;
+  height: var(--announcement-height);
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 600;
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    Arial, sans-serif;
+  font-size: 14px;
+}
+.announcement_button {
+  background: #fefaef;
+  padding: 8px 12px;
+  border: 1px solid #fefaef;
+  color: #333333;
+  font-size: 14px;
+  border-radius: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: 700;
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    Arial, sans-serif;
+}
+
+body {
+  background: #fcf9f3;
+  color: #324038;
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Noto Serif", Georgia, "Times New Roman", serif;
+  color: #324038;
+}
+
+header {
+  margin: 16px 0;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+.card {
+  background: white;
+  padding: 12px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  color: inherit;
+}
+.card div.img-placeholder {
+  width: 100%;
+  height: 140px;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  color: #777;
+}
+.card h3 {
+  font-size: 16px;
+  margin: 8px 0;
+  color: inherit;
+  font-family: "Noto Serif", Georgia, "Times New Roman", serif;
+}
+.card p {
+  font-size: 14px;
+  color: #666;
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    Arial, sans-serif;
+}
+.card .price {
+  font-weight: bold;
+  margin-top: 8px;
+  color: #324038;
+}
+.card button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    Arial, sans-serif;
+}
+.card button:hover {
+  opacity: 0.95;
+}
+
+footer {
+  background: #80754a;
+  color: #ffffff;
+  padding: 14px 16px;
+  margin-top: 24px;
+  text-align: center;
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    Arial, sans-serif;
+}
+
+.site-footer {
+  background: 80754A;
+  color: #ffffff;
+  padding: 60px var(--container-padding) 30px;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 60px;
+  max-width: var(--container-max-width);
+  margin: 0 auto 60px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+.footer-brand {
+  flex: 1;
+  max-width: 400px;
+}
+.footer-logo {
+  height: 40px;
+  margin-bottom: 20px;
+  filter: brightness(0) invert(1);
+}
+.footer-brand-text {
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+}
+.footer-newsletter {
+  flex: 1;
+  max-width: 450px;
+}
+.newsletter-title {
+  font-family: "Noto Serif", Georgia, "Times New Roman", serif;
+  font-size: 32px;
+  margin-bottom: 12px;
+  font-weight: 400;
+  color: white;
+}
+.newsletter-subtitle {
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+}
+.newsletter-form {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.newsletter-input {
+  flex: 1;
+  border: none;
+  padding: 14px 24px;
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    Arial, sans-serif;
+  font-size: 14px;
+  outline: none;
+}
+.newsletter-submit {
+  background: transparent;
+  border: none;
+  padding: 14px 20px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #0754a0;
+}
+.footer-middle {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+  max-width: var(--container-max-width);
+  margin: 0 auto 50px;
+}
+.footer-column {
+}
+.footer-heading {
+  font-family: "Noto Serif", Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  color: white;
+}
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-links li {
+  margin-bottom: 12px;
+}
+.footer-links a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    Arial, sans-serif;
+  font-size: 14px;
+}
+.footer-socials {
+  display: flex;
+  gap: 12px;
+}
+.social-link {
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+.footer-bottom {
+  text-align: center;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+}
+.footer-bottom p {
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    Arial, sans-serif;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.site-header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: var(--announcement-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px var(--container-padding);
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  background: transparent;
+  z-index: 20;
+}
+.site-header a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 14px;
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    Arial, sans-serif;
+}
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+.nav-left a {
+  color: #ffffff;
+  margin-right: 20px;
+  font-weight: 500;
+}
+.nav-center {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.logo {
+  height: 42px;
+  display: block;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+.nav-right .icon {
+  margin-left: 12px;
+}
+.nav-right .icon img {
+  height: 18px;
+  display: block;
+}
+
+.hero {
+  position: relative;
+  height: 700px;
+  background-image: url("../assets/home-4-img-1.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.45) 0%,
+    rgba(0, 0, 0, 0.25) 60%
+  );
+}
+.hero-content {
+  position: relative;
+  z-index: 5;
+  max-width: var(--container-max-width);
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+  margin: 0 auto;
+  color: #ffffff;
+  width: 100%;
+}
+.hero-content > * {
+  max-width: 720px;
+}
+.hero-title {
+  font-family: "Noto Serif", Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+  margin-bottom: 12px;
+  color: white;
+}
+.hero-sub {
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: -0.5px;
+  margin-bottom: 20px;
+}
+.hero-ctas {
+  display: flex;
+  gap: 12px;
+}
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.btn.primary {
+  background: #ffffff;
+  color: #324038;
+}
+.btn.ghost {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+.sustainability {
+  background: #fcf9f3;
+  padding: 80px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sustainability-text {
+  font-family: "Noto Serif", Georgia, "Times New Roman", serif;
+  font-size: 42px;
+  line-height: 1.35;
+  max-width: 800px;
+  margin: 0 auto 32px;
+  color: #324038;
+  font-weight: 400;
+}
+.btn-sustainability {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border: 1px solid #324038;
+  border-radius: 999px;
+  background: transparent;
+  color: #324038;
+  text-decoration: none;
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    Arial, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+.btn-sustainability .arrow {
+  font-size: 18px;
+}
+
+.collections {
+  padding: 80px var(--container-padding);
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+}
+.collections-title {
+  font-family: "Noto Serif", Georgia, "Times New Roman", serif;
+  font-size: 42px;
+  font-weight: 400;
+  color: #324038;
+  margin-bottom: 40px;
+}
+.collections-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.collection-card {
+  position: relative;
+  overflow: hidden;
+}
+.collection-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+.collection-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.collection-label {
+  background: #f0ebe1;
+  padding: 16px 20px;
+  text-align: center;
+  font-family: "Noto Serif", Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  color: #324038;
+  font-weight: 400;
+}
+
+.products-section {
+  padding: 80px var(--container-padding);
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+}
+.products-title {
+  font-family: "Noto Serif", Georgia, "Times New Roman", serif;
+  font-size: 42px;
+  font-weight: 400;
+  color: #324038;
+  margin-bottom: 48px;
+  text-align: center;
+}
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.product-card {
+  background: transparent;
+}
+.product-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: #e4ddd080;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  position: relative;
+  padding: 20px;
+}
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.product-info {
+  padding: 0 8px 16px;
+}
+.product-price {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.price-current {
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #324038;
+}
+.price-old {
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    Arial, sans-serif;
+  font-size: 16px;
+  color: #999;
+  text-decoration: line-through;
+}
+.product-name {
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #324038;
+  margin-bottom: 8px;
+}
+.product-rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+.stars {
+  color: #000;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.reviews {
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    Arial, sans-serif;
+  font-size: 13px;
+  color: #666;
+}
+.product-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.badge {
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    Arial, sans-serif;
+  font-size: 12px;
+  color: #324038;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: #f5f5f5;
+  border-radius: 20px;
+}
+.badge-icon {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+
+.testimonial {
+  display: flex;
+  align-items: stretch;
+  max-width: var(--container-max-width);
+  margin: 80px auto;
+}
+.testimonial-image {
+  width: 40%;
+  overflow: hidden;
+}
+.testimonial-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.testimonial-content {
+  width: 60%;
+  background: #f0ebe1;
+  padding: 80px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.testimonial-stars {
+  color: #d4a574;
+  font-size: 18px;
+  letter-spacing: 4px;
+  margin-bottom: 24px;
+}
+.testimonial-text {
+  font-family: "Noto Serif", Georgia, "Times New Roman", serif;
+  font-size: 28px;
+  line-height: 1.5;
+  color: #324038;
+  margin-bottom: 24px;
+  max-width: 520px;
+}
+.testimonial-author {
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    Arial, sans-serif;
+  font-size: 14px;
+  color: #324038;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+.testimonial-dots {
+  display: flex;
+  gap: 8px;
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #999;
+  cursor: pointer;
+}
+.dot.active {
+  background: #324038;
+}
+
+.transparency {
+  padding: 80px var(--container-padding);
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  text-align: center;
+}
+.transparency-title {
+  font-family: "Noto Serif", Georgia, "Times New Roman", serif;
+  font-size: 42px;
+  font-weight: 400;
+  color: #324038;
+  margin-bottom: 60px;
+}
+.transparency-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+.transparency-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.transparency-icon {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.transparency-icon img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.transparency-text {
+  font-family: "Noto Serif", Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #324038;
+  max-width: 220px;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  padding: 80px var(--container-padding);
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+}
+.about-content {
+  flex: 1;
+  max-width: 480px;
+}
+.about-label {
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #324038;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+.about-title {
+  font-family: "Noto Serif", Georgia, "Times New Roman", serif;
+  font-size: 42px;
+  line-height: 1.2;
+  color: #324038;
+  margin-bottom: 24px;
+  font-weight: 400;
+}
+.about-text {
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #666;
+  margin-bottom: 16px;
+}
+.btn-about {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border: 1px solid #324038;
+  border-radius: 999px;
+  background: transparent;
+  color: #324038;
+  text-decoration: none;
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    Arial, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  margin-top: 16px;
+}
+.btn-about .arrow {
+  font-size: 18px;
+}
+.about-image {
+  flex: 0 0 auto;
+  width: 650px;
+}
+.about-image img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  display: block;
+}
+
+.testimonial-carousel {
+  padding: 100px var(--container-padding);
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+.testimonial-carousel-title {
+  font-family: "Noto Serif", Georgia, "Times New Roman", serif;
+  font-size: 42px;
+  font-weight: 400;
+  color: #324038;
+  margin-bottom: 40px;
+}
+.testimonial-carousel-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.carousel-arrow {
+  background: transparent;
+  border: none;
+  font-size: 32px;
+  color: #324038;
+  cursor: pointer;
+  padding: 10px;
+}
+.testimonial-carousel-inner {
+  flex: 1;
+  max-width: 700px;
+}
+.testimonial-carousel-stars {
+  color: #000;
+  font-size: 20px;
+  letter-spacing: 4px;
+  margin-bottom: 24px;
+}
+.testimonial-carousel-text {
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #324038;
+  margin-bottom: 32px;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.testimonial-carousel-profiles {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.profile-img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.profile-img.active {
+  opacity: 1;
+}
+.testimonial-carousel-name {
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    Arial, sans-serif;
+  font-size: 15px;
+  color: #324038;
+  font-weight: 500;
+}
+
+.instagram {
+  padding: 80px 0;
+  text-align: center;
+}
+.instagram-title {
+  font-family: "Noto Serif", Georgia, "Times New Roman", serif;
+  font-size: 42px;
+  font-weight: 400;
+  color: #324038;
+  margin-bottom: 40px;
+}
+.instagram-gallery {
+  display: flex;
+  gap: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.instagram-gallery::-webkit-scrollbar {
+  display: none;
+}
+.instagram-item {
+  flex: 0 0 auto;
+  width: 280px;
+  height: 280px;
+  overflow: hidden;
+}
+.instagram-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #c9a876;
+  color: white;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon.cart {
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .transparency-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about {
+    gap: 60px;
+  }
+  .about-image {
+    width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --container-padding: 20px;
+  }
+
+  .site-header {
+    flex-wrap: wrap;
+    padding: 15px var(--container-padding);
+    gap: 15px;
+  }
+  .nav-left {
+    gap: 15px;
+    font-size: 13px;
+    order: 3;
+    width: 100%;
+    justify-content: center;
+  }
+  .nav-center {
+    order: 1;
+  }
+  .nav-right {
+    order: 2;
+    gap: 15px;
+  }
+  .logo {
+    height: 35px;
+  }
+
+  .announcement {
+    font-size: 12px;
+    padding: 10px 15px;
+  }
+  .announcement_button {
+    padding: 6px 14px;
+    font-size: 11px;
+  }
+
+  .hero {
+    min-height: 60vh;
+  }
+  .hero-title {
+    font-size: 36px;
+    margin-bottom: 16px;
+  }
+  .hero-sub {
+    font-size: 15px;
+    margin-bottom: 28px;
+  }
+  .hero-ctas {
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+  }
+  .btn {
+    width: 100%;
+  }
+
+  .sustainability {
+    padding: 50px var(--container-padding);
+  }
+  .sustainability-text {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  .btn-sustainability {
+    font-size: 14px;
+    padding: 10px 24px;
+  }
+
+  .collections {
+    padding: 50px var(--container-padding);
+  }
+  .collections-title {
+    font-size: 32px;
+    margin-bottom: 28px;
+  }
+  .collections-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .products-section {
+    padding: 50px var(--container-padding);
+  }
+  .products-title {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .product-name {
+    font-size: 14px;
+  }
+  .price-current {
+    font-size: 16px;
+  }
+
+  .testimonial {
+    flex-direction: column;
+    margin: 50px auto;
+  }
+  .testimonial-image,
+  .testimonial-content {
+    width: 100%;
+  }
+  .testimonial-content {
+    padding: 50px 30px;
+  }
+  .testimonial-text {
+    font-size: 22px;
+  }
+
+  .transparency {
+    padding: 50px var(--container-padding);
+  }
+  .transparency-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  .transparency-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .about {
+    flex-direction: column;
+    padding: 50px var(--container-padding);
+    gap: 40px;
+  }
+  .about-title {
+    font-size: 32px;
+  }
+  .about-image {
+    width: 100%;
+  }
+  .about-image img {
+    height: 400px;
+  }
+
+  .instagram {
+    padding: 50px 0;
+  }
+  .instagram-title {
+    font-size: 32px;
+    margin-bottom: 28px;
+  }
+  .instagram-item {
+    width: 220px;
+    height: 220px;
+  }
+
+  .footer-brand {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .footer-newsletter {
+    width: 100%;
+  }
+  .footer-middle {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 20px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-left {
+    flex-wrap: wrap;
+    font-size: 12px;
+    gap: 10px;
+  }
+  .nav-right {
+    gap: 12px;
+  }
+  .nav-right img {
+    width: 18px;
+    height: 18px;
+  }
+  .logo {
+    height: 30px;
+  }
+
+  .hero {
+    min-height: 50vh;
+  }
+  .hero-title {
+    font-size: 28px;
+  }
+  .hero-sub {
+    font-size: 14px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+  .product-card {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .testimonial-content {
+    padding: 40px 20px;
+  }
+  .testimonial-text {
+    font-size: 18px;
+  }
+
+  .collections-title {
+    font-size: 28px;
+  }
+
+  .sustainability-text {
+    font-size: 18px;
+  }
+
+  .footer-middle {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .footer-column {
+    text-align: center;
+  }
+
+  .about-title {
+    font-size: 28px;
+  }
+  .about-image img {
+    height: 300px;
+  }
+  .instagram-item {
+    width: 180px;
+    height: 180px;
+  }
+}
